@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  background-color: gainsboro;
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 210px 3fr;
+  grid-template-rows: 150px 2fr;
+  overflow-y: hidden;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar {
+  background-color: rgb(66, 162, 214);
+  grid-row: 1/3;
+  grid-column: 1/2;
+  height: 100vh;
+}
+
+#logo {
+  margin-left: 0;
+  padding-left: 3px;
+}
+
+#logo a {
+  font-size: 1.5rem;
+}
+
+#logo img {
+  height: 40px;
+  width: 40px;
+}
+
+img {
+  height: 20px;
+  width: 20px;
+}
+
+.sidebar a {
+  font-size: 1rem;
+}
+
+.sidebar div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 5px;
+  padding: 10px;
+  gap: 8px;
+}
+
+.sidebar #settings {
+  margin-top: 40px;
+}
+
+/* /HEADER SECTION */
+
+.header {
+  background-color: rgb(255, 255, 255);
+  min-height: 20vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 50px 100px;
+  box-shadow: 3px 3px 3px rgb(176, 173, 173);
+  margin-bottom: 4px;
+}
+
+.profile-img {
+  justify-self: flex-end;
+  margin-right: 70px;
+}
+
+.profile-img img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.profile-img img:first-child {
+  height: 25px;
+  width: 25px;
+  margin: 10px 20px 10px 10px;
+}
+
+.profile-img img:nth-child(2) {
+  margin: 5px 5px 0 5px;
+  height: 40px;
+  width: 40px;
+}
+
+.header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search-bar {
+  margin: 10px;
+  padding: 10px;
+}
+
+#search-icon {
+  border: none;
+  background-color: white;
+  padding: 5px;
+}
+
+.big-img-profile {
+  padding: 0 10px 0 10px;
+  margin: 0 10px 0 10px;
+  min-width: 300px;
+  justify-self: flex-start;
+}
+
+.big-img-profile h1 {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+.big-img-profile div {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.big-img-profile img {
+  height: 60px;
+  width: 60px;
+  margin-right: 10px;
+}
+
+.edit-btn {
+  background-color: rgb(105, 179, 229);
+  padding: 5px;
+  border-radius: 15px;
+  margin: 10px;
+  border: none;
+  width: 80px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.profile-img img {
+  height: 29px;
+  width: 30px;
+}
+
+input {
+  border-radius: 12px;
+  border: 1px gainsboro solid;
+  background-color: rgb(238, 238, 238);
+  height: 20px;
+  width: 450px;
+}
+
+/* /BODY SECTION */
+
+.main-content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 30px 1fr;
+  gap: 15px;
+  background-color: gainsboro;
+  margin: 0 0 1rem 10px;
+  height: 80vh;
+}
+
+.main-content .project {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: 30px;
+  gap: 15px;
+}
+
+.project > div {
+  background-color: #ffffff;
+  box-shadow: 3px 3px 3px rgb(170, 167, 167);
+}
+
+.projects-articles {
+  padding: 1rem 1rem 0 1rem;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.projects-articles h3 {
+  margin: 10px;
+}
+
+.projects-articles div {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.projects-articles div img {
+  margin: 3px;
+  padding: 5px;
+}
+
+.article-head {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.project-btn {
+  border: none;
+  background-color: white;
+}
+
+#head1 {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  align-self: center;
+}
+
+.side-content {
+  display: grid;
+  gap: 10px;
+}
+
+.trending div {
+  display: flex;
+  margin: 3px 3px 3px 3px;
+}
+
+.profiles div {
+  display: flex;
+  flex-direction: column;
+}
+
+.profiles img {
+  height: 40px;
+  width: 40px;
+}
+
+.announcements,
+.trending {
+  background-color: white;
+  padding: 1rem 1rem 0.5rem 1rem;
+  box-shadow: 3px 3px 3px rgb(170, 167, 167);
+  border-radius: 10px;
+}
+
+.announcements {
+  margin-right: 20px;
+}
+
+.trending {
+  margin: 0 20px 10px 0;
+}
+
+#head1,
+#head2 {
+  margin-top: 10px;
+}
+
+.announces {
+  min-width: 150px;
+  max-width: 250px;
+  margin: 10px 5px 5px 5px;
+}
+
+.announces h4 {
+  margin-bottom: 5px;
+}
